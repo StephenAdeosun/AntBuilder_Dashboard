@@ -256,16 +256,16 @@ const VerticalTabPanel = () => {
                 <Project />
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In Progress</p>
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In Progress</p>
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In Progress</p>
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In Progress</p>
               </TabPanel>
             </TabPanels>
           </Tabs>
