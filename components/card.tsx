@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
         mb='6'
         width="340px"
         border="1px solid rgba(235, 235, 235,1)"
-        p="2"
+        p="3"
       >
         <Box>
           <Flex justifyContent="space-between" alignItems="center">

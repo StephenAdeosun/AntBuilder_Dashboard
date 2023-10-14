@@ -29,11 +29,11 @@ import Logo from "../public/images/Logo.svg";
 import DashboardPage from "@/components/projectCard";
 import Transaction from "@/components/transaction";
 import Image from "next/image";
-import Navbar from "./navbar";
+import Navbar from "../components/navbar";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import ProjectName from "../public/images/logos_iron-icon.svg";
-import Dashboard from "./dashboardTab1";
-import Project from "./project";
+import Dashboard from "../components/dashboardTab1";
+import Project from "../components/project";
 
 const customTheme = extendTheme({
   components: {
@@ -92,7 +92,6 @@ const VerticalTabPanel = () => {
                       size={20}
                       _selected={iconStyle}
                     />
-                    Dashboard
                   </Flex>
                 </Tab>
                 <Tab color="rgba(164, 170, 178, 1)" _selected={iconStyle}>
@@ -103,7 +102,6 @@ const VerticalTabPanel = () => {
                       size={20}
                       _selected={iconStyle}
                     />
-                    Studio
                   </Flex>
                 </Tab>
                 <Tab color="rgba(164, 170, 178, 1)" _selected={iconStyle}>
@@ -114,25 +112,16 @@ const VerticalTabPanel = () => {
                       size={20}
                       _selected={iconStyle}
                     />
-                    Projects
                   </Flex>
                 </Tab>
                 <Tab color="rgba(164, 170, 178, 1)" _selected={iconStyle}>
-                  <Flex
-                    pr="6"
-                    justifyContent="space-between"
-                    gap="3"
-                    alignItems="center"
-                  >
-                    <Flex alignItems="center" gap="3">
-                      <Box
-                        display="inline"
-                        as={People}
-                        size={20}
-                        _selected={iconStyle}
-                      />
-                      Team
-                    </Flex>
+                  <Flex alignItems="center" gap="3">
+                    <Box
+                      display="inline"
+                      as={People}
+                      size={20}
+                      _selected={iconStyle}
+                    />
                   </Flex>
                 </Tab>
                 <Tab color="rgba(164, 170, 178, 1)" _selected={iconStyle}>
@@ -143,9 +132,9 @@ const VerticalTabPanel = () => {
                       size={20}
                       _selected={iconStyle}
                     />
-                    Transactions
                   </Flex>
                 </Tab>
+               
 
 
 
@@ -162,7 +151,6 @@ const VerticalTabPanel = () => {
                       size={20}
                       _selected={iconStyle}
                     />
-                    Settings
                   </Flex>
                 </Tab>
                 
@@ -184,7 +172,6 @@ const VerticalTabPanel = () => {
                       as={MessageQuestion}
                       _selected={iconStyle}
                     />
-                    FAQ
                   </Flex>
                 </Tab>
 
@@ -203,47 +190,18 @@ const VerticalTabPanel = () => {
                       as={LogoutCurve}
                       _selected={iconStyle}
                     />
-                    Sign Out
+                    
                   </Flex>
                 </Tab>
               </Box>
 
-              {/* <Box mx="6" mt="96px" >
-                <HStack
-                  spacing={-12}
-                  border="2px solid rgba(235, 235, 235,1)"
-                  borderRadius="6"
-                  px="2"
-                >
-                  <Image src={ProjectName} alt="Logo" />
-                  <Select
-                    icon={<ChevronDownIcon />}
-                    placeholder="Project name"
-                    width="200px"
-                    border="none"
-                    _active={{ border: "none" }}
-                    _focus={{ border: "none" }}
-                    _hover={{ border: "none" }}
-                  >
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </Select>
-                </HStack>
-                <Box
-                  width="100"
-                  h="1"
-                  my="4"
-                  bgColor="rgba(237, 244, 255, 1)"
-                ></Box>
-              </Box> */}
 
          
               
             </TabList>
 
             {/* Vertical Tab Panels */}
-            <TabPanels ml="40" mt="4">
+            <TabPanels ml="28" mt="4">
               <TabPanel>
                 <Dashboard />
               </TabPanel>
@@ -256,16 +214,19 @@ const VerticalTabPanel = () => {
                 <Project />
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In progress...</p>
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In progress...</p>
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In progress...</p>
               </TabPanel>
               <TabPanel>
-                <p>Tab 3 Content</p>
+                <p>In progress...</p>
+              </TabPanel>
+              <TabPanel>
+                <p>In progress...</p>
               </TabPanel>
             </TabPanels>
           </Tabs>

@@ -21,7 +21,7 @@ import {
 const MyTable = () => {
   return (
     <Box h="100vh" bgColor="#FCFCFC" color="black">
-      <Table variant="simple" bgColor="#FCFCFC" color="black" width='989px'>
+      <Table variant="simple" bgColor="#FCFCFC" color="black" width="989px">
         <Thead>
           <Tr color={"rgba(8, 14, 26, 1)"} fontWeight={"600"} fontSize={"16"}>
             <Th color={"rgba(8, 14, 26, 1)"} fontWeight={"600"} fontSize={"12"}>
@@ -51,15 +51,20 @@ const MyTable = () => {
               top="0"
               fontWeight={"400"}
               fontSize={"12"}
-              w='172px'
+              w="172px"
             >
               Blog Page
             </Td>
-              
-            <Td color={"rgba(8, 14, 26, 1)"}  w='217px' fontWeight={"400"} fontSize={"12"}>
+
+            <Td
+              color={"rgba(8, 14, 26, 1)"}
+              w="217px"
+              fontWeight={"400"}
+              fontSize={"12"}
+            >
               A blog screen, where all posted blog will show up
             </Td>
-            <Td w='175px'>
+            <Td w="175px">
               <UnorderedList
                 color={"rgba(8, 14, 26, 1)"}
                 lineHeight={"24px"}
@@ -84,7 +89,7 @@ const MyTable = () => {
               </UnorderedList>
             </Td>
 
-            <Td w='224px'>
+            <Td w="224px">
               <UnorderedList
                 color={"rgba(8, 14, 26, 1)"}
                 lineHeight={"24px"}
@@ -125,7 +130,12 @@ const MyTable = () => {
                 </ListItem>
               </UnorderedList>
             </Td>
-            <Td lineHeight={"24px"} w='120px' fontWeight={"300"} fontSize={"13"}>
+            <Td
+              lineHeight={"24px"}
+              w="120px"
+              fontWeight={"300"}
+              fontSize={"13"}
+            >
               Demo video (
               https://www.code-brew.com/build-all-in-one-delivery-app-postmates-clone-grab-clone-delivery-app-clone-live-demo/
               ) https://prnt.sc/Ik4HupjAW3Up
@@ -133,6 +143,43 @@ const MyTable = () => {
             <Td>Data 6</Td>
           </Tr>
           {/* Add more rows as needed */}
+          <Tr>
+            <Td>
+              <Text
+                color={"rgba(8, 14, 26, 1)"}
+                fontWeight={"400"}
+                fontSize={"12"}
+              >
+                Solutions Page
+              </Text>
+            </Td>
+            <Td>
+              <Text
+                color={"rgba(8, 14, 26, 1)"}
+                fontWeight={"400"}
+                fontSize={"12"}
+              >
+                This page will show all our solutions, and we can update this
+                page as we need to reflect our ever changing solutions
+              </Text>
+            </Td>
+            
+            <Td   w="70px">
+              <UnorderedList     color={"rgba(8, 14, 26, 1)"}
+                lineHeight={"24px"}
+                fontWeight={"300"}
+                fontSize={"13"}>
+                <ListItem>List of our solutions</ListItem>
+                <ListItem>Top navigation bar</ListItem>
+                <ListItem>Button naviagation/site map</ListItem>
+                <ListItem>Get started button</ListItem>
+                <ListItem>
+                  Solutions:
+                  https://docs.google.com/document/d/1t6lMUSlpkZkXjII0XLTmSgqgL7TbRO9kJrG2cUZ0ba8/edit
+                </ListItem>
+              </UnorderedList>
+            </Td>
+          </Tr>
         </Tbody>
       </Table>
     </Box>

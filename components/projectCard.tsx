@@ -7,7 +7,6 @@ import progress from "../public/images/Progress bar.svg";
 import {ProjectCardProps} from '../@types';
 import ProjectCard from './card'
 
-
 //  interface ProjectCardProps {
 //     projectName: string;
 //     projectId: string;
